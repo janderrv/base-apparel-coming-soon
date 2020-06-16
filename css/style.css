@@ -91,22 +91,23 @@ img {
   width: 100%;
 }
 
-#inputEmail {
+#email {
   width: 65%;
-  color: hsl(0, 36%, 70%);
+  color: black;
+  font-weight: bold;
   border: 1px solid;
+  border-color: hsl(0, 36%, 70%);
   border-radius: 20px 20px 20px 20px;
   height: 3rem;
-}
-
-#inputEmail::placeholder {
-  color: hsl(0, 36%, 70%);
-  padding-left: 10%;
+  padding-left: 5%;
   font-family: "Josefin Sans", sans-serif;
   font-size: 1rem;
   opacity: 0.5;
 }
 
+#email::placeholder {
+  color: hsl(0, 36%, 70%);
+}
 #btnSubmit {
   position: relative;
   top: 1.2rem;
@@ -118,4 +119,32 @@ img {
   background: url(/images/icon-arrow.svg) no-repeat center,
     linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
   box-shadow: 0px 15px 30px -5px hsl(0, 36%, 70%);
+}
+
+#btnSubmit:active {
+  background: url(/images/icon-arrow.svg) no-repeat center,
+    linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  opacity: 0.8;
+}
+
+.validate {
+  margin-top: 2%;
+  margin-left: 5%;
+  color: hsl(0, 93%, 68%);
+  display: none;
+}
+
+.validate img {
+  position: relative;
+  bottom: 4em;
+  left: 20em;
+}
+
+.active {
+  display: inline;
+}
+
+#emailForm > .active {
+  border: 3px solid;
+  border-color: red;
 }

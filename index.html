@@ -34,19 +34,23 @@
             store. Add your email below to stay up-to-date with announcements
             and our launch deals.
           </p>
-          <form id="emailForm" action="submit">
+          <form id="emailForm" action="#">
             <input
               type="email"
-              name="inputEmail"
-              id="inputEmail"
+              name="email"
+              id="email"
               placeholder="Email Address"
             />
-            <input id="btnSubmit" type="button" />
+            <input id="btnSubmit" type="button" onclick="validate()" />
           </form>
+          <p class="validate">
+            Please provide a valid email
+            <img src="./images/icon-error.svg" alt="Invalid email" />
+          </p>
         </section>
       </main>
       <aside class="side"></aside>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="/js/script.js"></script>
   </body>
 </html>
