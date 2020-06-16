@@ -16,10 +16,12 @@ img {
 }
 
 .container {
-  max-width: 1440px;
+  width: 100%;
   height: 100vh;
+  max-width: 1440px;
+  max-height: 800px;
+  margin: 0 auto;
   display: grid;
-  margin-left: 6%;
   grid-template-areas:
     "header header aside"
     "main main .";
@@ -38,7 +40,6 @@ img {
 
 .side {
   grid-area: aside;
-  display: grid;
   grid-row: 1 / span 2;
   background: url(/images/hero-desktop.jpg) no-repeat;
   background-size: cover;
@@ -46,7 +47,6 @@ img {
 
 .main {
   grid-area: main;
-  display: grid;
   grid-template-areas: "content";
 }
 
@@ -57,7 +57,7 @@ img {
   margin-left: 15%;
   margin-top: 5%;
   text-align: left;
-  max-width: 55%;
+  max-width: 100%;
 }
 
 .titulo-1 {
@@ -72,25 +72,27 @@ img {
   font-weight: 600;
   text-transform: uppercase;
   font-size: 3.75rem;
+  max-width: 55%;
   letter-spacing: 1rem;
 }
 
 .text {
   margin-top: 5%;
   font-weight: 400;
+  max-width: 70%;
   line-height: 2rem;
   color: hsl(0, 36%, 70%);
 }
 
 #emailForm {
   display: inline-block;
-  margin-top: 10%;
+  margin-top: 5%;
   align-self: center;
   width: 100%;
 }
 
 #inputEmail {
-  width: 100%;
+  width: 65%;
   color: hsl(0, 36%, 70%);
   border: 1px solid;
   border-radius: 20px 20px 20px 20px;
@@ -107,9 +109,9 @@ img {
 
 #btnSubmit {
   position: relative;
-  bottom: 48%;
-  left: 85%;
-  width: 20%;
+  top: 1.2rem;
+  left: -3rem;
+  width: 11.5%;
   border: none;
   height: 3rem;
   border-radius: 20px 20px 20px 20px;
